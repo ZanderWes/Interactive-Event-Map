@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFEventMap.CollaboratorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFEventMap"
+        mc:Ignorable="d"
+        Title="Collaborator View" Height="327.179" Width="581.193">
+    <Grid Background="#FF70C774">
+        <ListBox x:Name="Carer_List" HorizontalAlignment="Left" Height="258" Margin="10,10,0,0" VerticalAlignment="Top" Width="383" Background="#FF469ED3" FontSize="14" BorderThickness="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0.5">
+                        <TextBlock Background="LightGray">
+                            <Run FontWeight="Bold" Text="{Binding Name}"/>
+                            <Run Text="{Binding CarerOrganisation}"/>
+                            <Run Text="{Binding Support}"/>
+                        </TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="Add_Collaborator_btn" Content="Add Collaborator" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Margin="418,255,0,0" Height="32" FontSize="14" FontWeight="Bold" Background="#FFF4B8E6" Click="Add_Collaborator_btn_Click"/>
+        <Button x:Name="Exit_btn" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="474,10,0,0" Height="32" Background="#FFED5252" FontSize="16" FontWeight="Bold" Click="Exit_btn_Click" IsCancel="True"/>
+        <TextBox x:Name="Name_txt" TextChanged="OnTextBoxTextChanged" HorizontalAlignment="Left" Height="23" Margin="418,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <Label x:Name="carer_lbl" Content="Add a new Collaborator" HorizontalAlignment="Left" Margin="418,47,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold"/>
+        <Label x:Name="Full_name_lbl" Content="Full Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,73,0,0" Width="86" Opacity="0.8"/>
+        <Label x:Name="Organisation" Content="Organisation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="418,122,0,0" Width="86" Opacity="0.8"/>
+        <TextBox x:Name="Organisation_txtbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Margin="418,148,0,0"/>
+        <CheckBox x:Name="Casual_Support_chkbx" Content="Casual Carer" HorizontalAlignment="Left" Margin="420,187,0,0" VerticalAlignment="Top" Checked="Casual_Support_chkbx_Checked"/>
+        <CheckBox x:Name="Intermediate_Support_chkbx" Content="Intermediate Carer" HorizontalAlignment="Left" Margin="420,207,0,0" VerticalAlignment="Top" Checked="Intermediate_Support_chkbx_Checked"/>
+        <CheckBox x:Name="High_Support_chkbx" Content="High Support Carer" HorizontalAlignment="Left" Margin="420,227,0,0" VerticalAlignment="Top" Checked="High_Support_chkbx_Checked"/>
+
+    </Grid>
+</Window>

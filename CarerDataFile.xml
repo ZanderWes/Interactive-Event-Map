@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ArrayOfCollaborator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Collaborator>
+    <object_ID>1</object_ID>
+    <Name>Julia West</Name>
+    <CarerID>123</CarerID>
+    <CarerOrganisation>BetterHealth</CarerOrganisation>
+    <Support>CASUAL_SUPPORT</Support>
+  </Collaborator>
+  <Collaborator>
+    <object_ID>2</object_ID>
+    <Name>Robert Kubica</Name>
+    <CarerID>101</CarerID>
+    <CarerOrganisation>PerthCarers</CarerOrganisation>
+    <Support>HIGH_SUPPORT</Support>
+  </Collaborator>
+  <Collaborator>
+    <object_ID>3</object_ID>
+    <Name>Jack Richman</Name>
+    <CarerID>999</CarerID>
+    <CarerOrganisation>HealthyForTheWealthy</CarerOrganisation>
+    <Support>INTERMEDIATE_SUPPORT</Support>
+  </Collaborator>
+  <Collaborator>
+    <object_ID>4</object_ID>
+    <Name>Jack Daniels</Name>
+    <CarerID>0</CarerID>
+    <CarerOrganisation>HappyCare</CarerOrganisation>
+    <Support>CASUAL_SUPPORT</Support>
+  </Collaborator>
+  <Collaborator>
+    <object_ID>5</object_ID>
+    <Name>Tilly Ramsey</Name>
+    <CarerID>0</CarerID>
+    <CarerOrganisation>PerthCarers</CarerOrganisation>
+    <Support>INTERMEDIATE_SUPPORT</Support>
+  </Collaborator>
+</ArrayOfCollaborator>
