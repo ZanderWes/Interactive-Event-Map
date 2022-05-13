@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{77E580DF-4053-40A4-A73B-228591F92A50}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Assignment2</RootNamespace>
-    <AssemblyName>Assignment2</AssemblyName>
+    <RootNamespace>WPFEventMap</RootNamespace>
+    <AssemblyName>WPFEventMap</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
